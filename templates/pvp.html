@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Five-in-a-Row</title>
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    <script src="static/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <style>
+        .canvas_container{
+            margin:0 auto;
+            width:570px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <nav class="collapse navbar-collapse navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Five-in-a-Row</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/index?user_name={{user_name}}">Index</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="starter-template">
+            <br>
+            <span class="label label-info center-block">Room Id: <span id="room_id">{{room_id}}</span></span>
+            <span class="label label-info center-block">User Name: <span id="user_name">{{user_name}}</span></span>
+            <span class="label label-info center-block">Both Players Ready: <span id="players_ready">{{players_ready}}</span></span>
+            <span class="label label-info center-block">Players Turn: <span id="players_turn">Waiting...</span></span>
+            <!--<a href="javascript:newgame();" id="restart">Restart</a>-->
+            <br>
+            <div class="canvas_container">
+                <canvas id="chess" width="570px" height="570px">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="static/js/pvp.js"></script>
+</body>
+</html>

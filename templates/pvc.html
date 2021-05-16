@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Five-in-a-Row</title>
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <style>
+        canvas {
+          margin: 0 auto;
+          display: block;
+          -moz-box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #b9b9b9;
+          -webkit-box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #b9b9b9;
+          box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #b9b9b9;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    <nav class="collapse navbar-collapse navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Five-in-a-Row</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/index?user_name={{user_name}}">Index</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="starter-template">
+            <br>
+            <br>
+            <button type="button" class="btn btn-large btn-primary btn-block"
+                onclick="javascript:new_game();">
+                Restart
+            </button>
+            <br>
+            <br>
+            <div class="container">
+                <canvas id="chess" width="570px" height="570px">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="static/js/pvc.js"></script>
+</body>
+</html>
