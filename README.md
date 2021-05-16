@@ -1,4 +1,4 @@
-# 5-in-row assignment
+# 5-in-row （五子棋人人对战/人机对战）
 
 How to run:
 
